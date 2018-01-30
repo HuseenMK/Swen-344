@@ -1,0 +1,2 @@
+class HelloRail < ApplicationRecord
+end

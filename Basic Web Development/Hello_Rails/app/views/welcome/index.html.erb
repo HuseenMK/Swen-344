@@ -2,21 +2,21 @@
 <html>
     <head>
     	<meta charset="utf-8">
-        <title>Hello Angular</title>
+        <title>Hello Rails</title>
     </head>
 	<body ng-app = "hello" ng-controller ="helloController">
     	
-    	<h1 style="color: crimson" >Hello! This is Huseen</h1>
+    	<h1 style="color: crimson" ><%= @title %></h1>
         
         <div style="display: inline-block">
             <a  href="https://www.mahkareem.com"><button style="cursor: pointer" >My Webpage</button></a>
         </div>
         <div style="display: inline-block">
-            <a  href="info.html"> <button style="cursor: pointer">My Info</button></a>
+            <a  href="../info/index"> <button style="cursor: pointer">My Info</button></a>
         </div>
         <br><br>
-    	<img width= '300px' height="300px" src= "{{ img }}">
-    	<p style="font-size: 20px; color: cornflowerblue" >I love Frontend development and I hate backend </p>
+    	<img width= '300px' height="300px" src= "<%= @img %>">
+    	<p style="font-size: 20px; color: cornflowerblue; text-align: left" ><%= @me %></p>
         
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
